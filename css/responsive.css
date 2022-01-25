@@ -1,0 +1,143 @@
+
+@media only screen and (max-width: 1280px){
+  
+  /* Change hover effect on navbar*/
+  header a.home{
+    border: none;
+  }
+  
+  header a.home:hover{
+    border: none;
+    color: #fff;
+  }
+
+  header .nav-link:hover {
+    border-bottom: none;
+    color: #fff;
+  }
+
+  header h2.navbar-brand {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  
+  div.middle{
+    position: absolute;
+    top: 67%;
+  }
+  .section-1{
+    padding-bottom: 0;
+  }
+
+  .section-1 .chef-intro p{
+    font-size: 1rem;
+  }
+  
+  .section-1 .chef-name p{
+    font-size: 2.5rem;
+  }
+
+  .section-1 .about-chef p{
+    font-size: 1rem;
+    padding: 1.5em;
+  }
+
+  .section-1 .headchef img{
+    position: relative;
+    top: 70px;
+  }
+
+  .section-3 .open-pic img{
+    width: 100%;
+    top: 200px;
+  }
+
+  .section-4 .container-fluid{
+    padding: 1rem;
+  }
+   
+  .section-4 .container-fluid .row .card-header h1{
+   font-size: 30px;
+  }
+
+  iframe {
+    left: 7%;
+  }
+
+  .info .column .ic{
+    padding: 0.1em;
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  header .container .col-md-7 h1 {
+    font-size: 10vmin;
+  }
+
+  .section-3 .open-pic img{
+    top: -50px;
+  }
+
+  div.middle{
+    position: absolute;
+    top: 73%;
+  }
+  iframe {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 440px){
+  div.middle{
+    position: absolute;
+    top: 77%;
+  }
+
+  .section-1 .row .col-md-6 .headchef img {
+    padding-top: 5rem;
+    width: 100%;
+  }
+
+  .section-3 .open-pic img{
+    position: static;
+    padding-bottom: 3rem;
+    width:90%;
+  }
+
+  .section-4 .container-fluid{
+    padding: 0;
+  }
+
+  #booking-info{
+    padding-top: 5em;;
+  }
+
+  .section-5 .swiper-slide {
+    height: 400px;
+    width: 300px;
+  }
+
+  .section-5 .swiper-container .swiper-slide .imgbx .text h1{
+    font-size: 5em;
+  }
+
+  .section-5 .swiper-container .swiper-slide .content{
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  .section-5 .swiper-container .swiper-slide .content h3{
+    font-size: 1.7em;
+    padding: 0 0 10px 0;
+  }
+
+  .section-7 .container .row .col-sm-12 p{
+    font-size: 3em;
+  }
+}
+

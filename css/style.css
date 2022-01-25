@@ -1,0 +1,630 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+@font-face {
+  font-family: KGHappySolid;
+  src: url(../css/fonts/KG\ HAPPY\ Solid.ttf);
+}
+
+@font-face {
+  font-family: KGHappy;
+  src: url(../css/fonts/KGHAPPY.ttf);
+}
+
+@font-face {
+  font-family: KGHappyShadow;
+  src: url(../css/fonts/KGHAPPYShadows.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: KGHappySolid;
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+}
+
+/*Navigation bar padding*/
+header .navbar {
+  padding-top: 0.5em;
+}
+
+header .nav-item:last-child {
+  padding-right: 2em;
+}
+
+header .nav-item {
+  padding: 0.5em 0.5em 0.2em 0.5em;
+}
+
+header .navbar-brand {
+  padding: 0 1em;
+}
+
+header .nav-link {
+  padding: 0.1em 0.5em 0.1em 0.5em;
+}
+
+/*Navigation bar style*/
+header h2.navbar-brand {
+  font-size: 2.7em;
+  color: #000;
+  font-family: KGHappy;
+  margin: 0;
+}
+
+header a {
+  font-family: KGHappySolid;
+  font-size: 1.2em;
+  color: #000;
+}
+
+header a.home {
+  border: 2.4px solid #000;
+  border-radius: 0.5em;
+}
+
+header a.home:hover {
+  border: 2.4px solid #fff;
+  border-radius: 0em;
+}
+
+header .nav-link:hover {
+  border-bottom: 2.4px solid #fff;
+  color: #000;
+}
+
+header .nav-link:hover {
+  color: black;
+}
+
+header button.btn {
+  background-color: transparent !important;
+}
+
+/*Header style*/
+header .row .col-md-7 {
+  padding: 20vmin 1vmin 35vmin;
+}
+
+header .row .col-md-5 {
+  padding: 17vmin 1vmin;
+}
+
+header .row .col-md-5 img {
+  width: 100%;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+    url(../images/header_background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+header .container .col-md-7 h6 {
+  font-family: "Rubik", sans-serif;
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+  font-family: KGHappySolid;
+  font-size: 7.3vmin;
+  padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p {
+  font-family: "Rubik", sans-serif;
+  padding: 1vmin 5vmin;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.815);
+  transition: all 0.3s ease-in !important;
+}
+
+div.middle {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.button {
+  background: none;
+  /* border: 3px solid #000; */
+  font-family: KGHappySolid;
+  text-transform: uppercase;
+  padding: 17px 27px;
+  min-width: 200px;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.4s linear;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.button1::before {
+  transform: scaleY(0);
+}
+
+.button1:hover::before {
+  transform: scaleY(1);
+}
+.button2:hover {
+  color: #628d8c;
+  border: 3px solid #628d8c;
+}
+
+main {
+  background-image: url(../images/header_background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+}
+
+/********** section 1 **************/
+
+.section-1 {
+  padding: 20vmin 0vmin;
+}
+
+.section-1 .row .col-md-6 .headchef img {
+  opacity: 0.9;
+  width: 80%;
+  border-radius: 0.2em;
+  padding: 0 1em;
+}
+
+.section-1 .row .col-md-6:first-child {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  min-height: 1px;
+}
+
+.section-1 .chef-intro p {
+  margin-bottom: 0;
+  padding: 1em;
+  display: inline-block;
+  background-color: #4d7c8c;
+  color: #fff;
+  font-family: KGHappySolid;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.section-1 .chef-intro {
+  margin-bottom: 20px;
+}
+
+.section-1 .chef-name p {
+  margin-bottom: 0;
+  padding: 0.3em 0.5em;
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  font-family: KGHappy;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.section-1 .chef-name {
+  margin-bottom: 40px;
+}
+
+.section-1 .about-chef p {
+  padding: 4em;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-family: KGHappySolid;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+/**********Section-2****************/
+.section-2 {
+  padding-top: 20vmin;
+}
+
+.section-2 .container .row .col-xl-12 {
+  text-align: center;
+}
+
+.section-2 .container .row .col-xl-12 p {
+  padding: 0.2em;
+  display: inline-block;
+  font-family: KGHappy;
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.section-2 .container .row .menu {
+  padding: 1em;
+}
+
+.section-2 .container .row .menu img {
+  padding: 1em;
+  width: 300px;
+  height: 236px;
+}
+
+.section-2 .container .row .menu .content {
+  color: #000;
+  padding: 1em;
+}
+
+.section-2 .container .row .menu .content span {
+  color: orange;
+  font-size: 2em;
+}
+
+/**********Section-3****************/
+
+.section-3 {
+  padding: 20vmin 0vmin;
+}
+
+.section-3 .open-pic img {
+  position: relative;
+  top: 150px;
+  opacity: 0.9;
+}
+
+.section-3 .open-intro p {
+  margin-bottom: 0;
+  padding: 1em;
+  display: inline-block;
+  background-color: #7c4c54;
+  color: #fff;
+  font-family: KGHappySolid;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.section-3 .open-intro {
+  margin-bottom: 10px;
+}
+
+.section-3 .open-hours p {
+  margin-bottom: 0;
+  padding: 0.3em 0.5em;
+  display: inline-block;
+  background-color: #e96160;
+  color: #000;
+  font-family: KGHappy;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.section-3 .open-hours {
+  margin-bottom: 30px;
+}
+
+.section-3 .about-open {
+  justify-content: center;
+  padding: 2em 2em 0 2em;
+  display: inline-block;
+  background-color: #000;
+}
+
+.section-3 .about-open table {
+  color: #fff;
+  font-family: KGHappySolid;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/**********Section-4*******/
+.section-4 .container-fluid {
+  padding: 7rem;
+}
+
+.section-4 .container-fluid .row .card-header h1 {
+  font-family: KGHappy;
+  text-transform: uppercase;
+}
+
+.bt {
+  background: none;
+  border: 3px solid #000;
+  font-family: KGHappySolid;
+  text-transform: uppercase;
+  padding: 17px 27px;
+  min-width: 200px;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.1s linear;
+}
+
+.bt:hover {
+  color: #5dbcd2;
+  border: 3px solid #5dbcd2;
+}
+
+/*********End of Section-4*******/
+
+/**********Section-5*******/
+
+.section-5 .row .col-xl-12 {
+  text-align: center;
+}
+
+.section-5 .row .col-xl-12 p {
+  padding: 0.2em;
+  display: inline-block;
+  font-family: KGHappy;
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.section-5 .carousel .carousel-inner .carousel-item .d-block {
+  width: 70%;
+  margin: auto;
+}
+
+.section-5 .carousel .carousel-inner .carousel-item .carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/**********Section-6 Login***********/
+/* Signup form CSS code */
+.wrapper1 {
+  background: #fff;
+  max-width: 540px;
+  width: 100%;
+  border-radius: 16px;
+  margin: 0 auto;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+/* Login & Signup Form CSS Start */
+.form {
+  margin-top: 100px;
+  padding: 25px 30px;
+}
+.form header {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.form form {
+  margin: 20px 0;
+}
+.form form .error-text {
+  color: #721c24;
+  background: #f8d7da;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 10px;
+  display: none;
+}
+.form form .name-details {
+  display: flex;
+}
+.form .name-details .field:first-child {
+  margin-right: 10px;
+}
+.form .name-details .field:last-child {
+  margin-left: 10px;
+}
+.form form .field {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  position: relative;
+}
+.form form .field label {
+  margin-bottom: 2px;
+}
+.form form .input input {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.form form .field input {
+  outline: none;
+}
+.form form .image input {
+  font-size: 17px;
+}
+.form form .button input {
+  height: 45px;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  background: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 13px;
+}
+.form form .field i {
+  position: absolute;
+  right: 15px;
+  top: 70%;
+  color: #ccc;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.form form .field i.active::before {
+  color: #333;
+  content: "\f070";
+}
+.form .link {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 17px;
+}
+.form .link a {
+  color: #333;
+}
+.form .link a:hover {
+  text-decoration: underline;
+}
+
+/**********Section-7 Location********/
+
+.section-7 {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.section-7 .container .row .col-sm-12 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-7 .container .row .col-sm-12 p {
+  padding: 0.2em;
+  display: inline-block;
+  font-family: KGHappy;
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+iframe {
+  display: block;
+  position: relative;
+  left: 15%;
+  /* The 90vw means 90%, use any width you like */
+  width: 90vw;
+  /* Calculate the height to maintain original shape,
+      but match vw number to that above */
+  height: calc(0.75 * 90vw);
+  /* Optionally, set maximum height and width */
+  max-width: 800px;
+  max-height: 600px;
+  margin-right: 10px;
+  /* Optionally, you can use margin: 1em auto to center */
+  border: solid 2px gray;
+  box-shadow: 2px 2px 2px silver;
+  border-radius: 4px;
+}
+
+/**********Info************/
+.info-wrapper {
+  padding: 2.5em 0;
+}
+
+.info {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.info .row {
+  background-color: #628d8c;
+  border: 0.15em solid darkgray;
+}
+
+.info .about-us {
+  border-right: 0.15em solid darkgray;
+  padding: 2.5em;
+}
+
+.info .news {
+  height: 236px;
+  border-right: 0.15em solid darkgray;
+  padding: 3em;
+}
+
+.row h4.text {
+  font-family: KGHappySolid;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.row p.text-content {
+  font-size: 1em;
+}
+
+.row .email {
+  font-family: KGHappySolid;
+}
+
+.info .social {
+  height: 236px;
+  padding: 2.5em;
+}
+
+.info .column .ic:first-child {
+  padding-left: 0;
+}
+
+.info .column .ic {
+  padding: 0.5em;
+  font-size: 1.5em;
+}
