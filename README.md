@@ -25,7 +25,7 @@ The website includes 8 sections:
 - Hours
 - Reservation
 - Story
-- Login
+- Login/Logout
 - Location
 
 ## Technologies
@@ -33,7 +33,9 @@ The website includes 8 sections:
 - CSS
 - Bootstrap 4
 - JavaScript
-- 3D card swiper
+- PHP
+- MySQL
+- XAMPP
 
 ---
 
@@ -47,6 +49,7 @@ The website allows the user to sign up, login and then reserve a table from the 
 
 - Font: [KGHappy](http://www.kimberlygeswein.com/ "KimBerly Gesweln")
 
+- This project was inspired by: [CodingNepal](https://www.youtube.com/watch?v=VnvzxGWiK54&t=6383s)
 
 ## Author
 
