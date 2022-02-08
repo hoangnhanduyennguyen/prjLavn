@@ -7,7 +7,7 @@ In this project, I have created a website for a Vietnamese restaurant call Lavn.
 
 ### Table of Contents
 - [Prerequisites](#prerequisites)
-- [Description](#desciption)
+- [Description](#desrciption)
 - [How To Use](#how-to-use)
 - [Resources](#resources)
 - [Author](#author)
@@ -17,7 +17,7 @@ In this project, I have created a website for a Vietnamese restaurant call Lavn.
 ## Prerequisites
 You can use any browser (Chrome, Firefox, Safari,... ) to access Lavn.
 
-## Description
+## Desrciption
 The website includes 8 sections:
 - Header
 - Chef
@@ -27,6 +27,7 @@ The website includes 8 sections:
 - Story
 - Login/Logout
 - Location
+<img src="images/lavn_screenshot_home.png">
 
 ## Technologies
 - HTML
